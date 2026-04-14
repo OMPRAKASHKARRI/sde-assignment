@@ -4,7 +4,6 @@ const cors = require('cors');
 const app = express(); // ✅ FIRST create app
 
 // ✅ CORS (before routes)
-const cors = require('cors');
 
 app.use(cors({
   origin: '*'
