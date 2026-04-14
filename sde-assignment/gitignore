@@ -19,8 +19,7 @@ build/
 dist/
 
 # React build
-frontend/build/
-
+frontend/build
 # Database files (SQLite)
 backend/*.db
 backend/*.sqlite

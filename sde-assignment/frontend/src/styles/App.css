@@ -1,0 +1,242 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background: #1e1e2f;
+  color: white;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.note-item {
+  background: #2c2c3e;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note-item:hover {
+  background: #3a3a55;
+}
+
+.note-title {
+  font-size: 16px;
+}
+
+/* Main */
+.main {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Editor + Preview */
+.editor-container {
+  display: flex;
+  height: 100%;
+}
+
+/* Editor */
+.editor {
+  width: 50%;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.editor input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.editor textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Preview */
+.preview {
+  width: 50%;
+  padding: 15px;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Save button */
+.save-btn {
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.editor-container {
+  display: flex;
+  height: 100%;
+}
+
+.editor, .preview {
+  width: 50%;
+  height: 100%;
+}
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .sidebar {
+  background: #1a1a1a;
+}
+
+.dark .preview {
+  background: #222;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .editor-container {
+    flex-direction: column;
+  }
+
+  .editor, .preview {
+    width: 100%;
+  }
+}
+/* AUTH PAGES */
+
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #2c2c3e);
+}
+
+.auth-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background: #45a049;
+}
+
+.auth-link {
+  margin-top: 15px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+/* 🌙 DARK MODE */
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* Sidebar */
+.dark .sidebar {
+  background: #1a1a1a;
+}
+
+/* Main area */
+.dark .main {
+  background: #181818;
+}
+
+/* Editor */
+.dark textarea,
+.dark input {
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+/* Preview */
+.dark .preview {
+  background: #222;
+  color: #fff;
+}
+
+/* Auth pages */
+.dark .auth-box {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark .auth-box input {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark .auth-box button {
+  background: #4CAF50;
+}
