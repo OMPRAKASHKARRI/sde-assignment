@@ -4,9 +4,10 @@ const cors = require('cors');
 const app = express(); // ✅ FIRST create app
 
 // ✅ CORS (before routes)
+const cors = require('cors');
+
 app.use(cors({
-  origin: 'http://localhost:3000',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  origin: '*'
 }));
 
 app.use(express.json());
@@ -20,6 +21,8 @@ app.use('/notes', notesRoutes);
 app.use('/auth', authRoutes);
 
 // ✅ Start server
-app.listen(5000, () => {
-  console.log('Server running on port 5000 🚀');
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
 });
