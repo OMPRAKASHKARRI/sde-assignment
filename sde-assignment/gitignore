@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+*/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Build folders
+build/
+dist/
+
+# React build
+frontend/build/
+
+# Database files (SQLite)
+backend/*.db
+backend/*.sqlite
+
+# IDE files
+.vscode/
+.idea/
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage
+coverage/
+
+# Package lock optional (keep if needed)
+# package-lock.json
