@@ -1,43 +1,66 @@
+# =========================
 # Node modules
+# =========================
 node_modules/
 */node_modules/
 
+# =========================
 # Logs
-logs
+# =========================
+logs/
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
 # OS files
+# =========================
 .DS_Store
 Thumbs.db
 
-# Environment variables
-.env
-
-# Build folders
+# =========================
+# Build / dist
+# =========================
 build/
 dist/
+frontend/build/
 
-# React build
-frontend/build
-# Database files (SQLite)
+# =========================
+# Database (SQLite)
+# =========================
+*.db
+*.sqlite
 backend/*.db
 backend/*.sqlite
 
-# IDE files
+# =========================
+# IDE / Editor
+# =========================
 .vscode/
 .idea/
 
-# Mac system files
-.AppleDouble
-.LSOverride
-
-# Temporary files
+# =========================
+# Temp / cache
+# =========================
 *.tmp
 *.temp
-
-# Coverage
+.cache/
 coverage/
 
-# Package lock optional (keep if needed)
+# =========================
+# Misc
+# =========================
+*.local
+
+# =========================
+# Optional (keep if needed)
+# =========================
 # package-lock.json
+# yarn.lock
